@@ -1,0 +1,57 @@
+#home_body{
+    background-color: #FFD460;
+    background-image: url('/images/home/home_page.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    font-family: 'Quicksand';
+    font-size: large;
+}
+
+#search_home:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Colors */
+
+.brown{
+    color: #540C0B!important;
+}
+
+.orange_1{
+    color: #FA7E0A!important;
+}
+
+.orange_2{
+    color:#F07F40!important;
+}
+
+.light_orange_2{
+    color:#FFD460!important;
+}
+
+.bg_light_orange_2{
+    background-color:#FFF098!important;
+}
+
+.bg_orange_1{
+    background-color: #FA7E0A;
+}
+
+.bg_orange_2{
+    background-color: #F07F40;
+}
+
+/* Opacity */
+
+.opacity50 {
+    opacity: 50%;
+}
+
+/* Font Weight */
+
+.bold{
+    font-weight: 700!important;
+}
+

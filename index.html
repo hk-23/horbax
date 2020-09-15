@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
+    <title>Horbax</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Font : QuickSans -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style/style.css">
 
 </head>
 
-<body>
-    This is me
+<body id="home_body">
+
+    <header>
+        <nav class="navbar navbar-expand">
+            <!-- Nav Menu -->
+            <ul class="navbar-nav mr-auto mb-auto mt-4">
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="orange_1 active nav-link bold">Home</a>
+                </li>
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="orange_1 active nav-link bold">Store</a>
+                </li>
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="orange_1 active nav-link bold">About Us</a>
+                </li>
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="orange_1 active nav-link bold">Feedback</a>
+                </li>
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
+                </li>
+            </ul>
+            <!-- Profile Pic -->
+            <ul class="navbar-nav ml-auto mb-auto mt-4">
+                <li class="nav-item px-sm-2 d-none d-sm-block">
+                    <a href="#" class="brown active nav-link bold">SignUp</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="container d-flex justify-content-center align-items-center" style="height: 88vh !important;">
+            <div class="card mb-n2 bg-transparent border-0" style="width: 18rem;">
+                <section>
+                    <img src="/images/home/logo.png" class="card-img-top" alt="">
+                </section>
+                <section class="card-body text-center">
+                    <h4 class="card-title bold orange_1">Online Store</h4>
+
+                    <div class="input-group rounded-pill bg_light_orange_2 border"
+                        style="border-color: #FA7E0A!important;">
+                        <input type=" text" id="search_home" class="form-control rounded-pill bg-transparent border-0"
+                            placeholder="Search a product">
+                        <div class="input-group-append">
+                            <span class="input-group-text rounded-pill bg-transparent border-0"><i
+                                    class="fas fa-search orange_2"></i></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article class="container">
+
+            <section class="d-flex justify-content-center bg_orange_1 rounded-pill">
+                <h2 class="bold brown">Our Products</h2>
+            </section>
+
+            <section class="row">
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/cookies.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Cookies</h2>
+                            <p class="card-text">Cokkies make the world better place.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/group_of_vegetables.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Fruits & Vegetables</h2>
+                            <p class="card-text">Switch smart, switch to fruits & vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/snack_withhuman.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Snacks</h2>
+                            <p class="card-text">Snack makes me feel better.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/cookies.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Cookies</h2>
+                            <p class="card-text">Cokkies make the world better place.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/group_of_vegetables.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Fruits & Vegetables</h2>
+                            <p class="card-text">Switch smart, switch to fruits & vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                    <div class="card text-center align-items-center my-2" style="width: 18rem;">
+                        <img src="/images/products/snack_withhuman.jpg" class="card-img-top mt-3" alt="product"
+                            style="height: 250px; width: 250px; ">
+                        <div class="card-body">
+                            <h2 class="card-title">Snacks</h2>
+                            <p class="card-text">Snack makes me feel better.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

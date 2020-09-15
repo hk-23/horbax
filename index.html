@@ -28,31 +28,72 @@
 <body id="home_body">
 
     <header>
-        <nav class="navbar navbar-expand">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mt-3 nav-link" href="index.html"> <img src="images/home/logo.png"
+                    style="height: 50px; width: 80px;" alt="">
+            </a>
+            <div class="dropdown">
+                <button class="btn mt-3 custom-toggler navbar-toggler" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <ul class="navbar-nav mr-auto mb-auto mt-lg-4 text-center">
+                        <li class="nav-item px-sm-2">
+                            <a href="index.html" class="orange_1 active nav-link bold">Home</a>
+                        </li>
+                        <li class="nav-item px-sm-2">
+                            <a href="store/store.html" class="orange_1 active nav-link bold">Store</a>
+                        </li>
+                        <li class="nav-item px-sm-2">
+                            <a href="#" class="orange_1 active nav-link bold">About Us</a>
+                        </li>
+                        <li class="nav-item px-sm-2">
+                            <a href="#" class="orange_1 active nav-link bold">Feedback</a>
+                        </li>
+                        <li class="nav-item px-sm-2">
+                            <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 
+            <button class="navbar-toggler mt-3 custom-toggler" type=" button" data-toggle="dropdown"
+                aria-haspopup="true" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+
             <!-- Nav Menu -->
-            <ul class="navbar-nav mr-auto mb-auto mt-4">
-                <li class="nav-item px-sm-2 d-none d-sm-block">
-                    <a href="#" class="orange_1 active nav-link bold">Home</a>
-                </li>
-                <li class="nav-item px-sm-2 d-none d-sm-block">
-                    <a href="#" class="orange_1 active nav-link bold">Store</a>
-                </li>
-                <li class="nav-item px-sm-2 d-none d-sm-block">
-                    <a href="#" class="orange_1 active nav-link bold">About Us</a>
-                </li>
-                <li class="nav-item px-sm-2 d-none d-sm-block">
-                    <a href="#" class="orange_1 active nav-link bold">Feedback</a>
-                </li>
-                <li class="nav-item px-sm-2 d-none d-sm-block">
-                    <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
-                </li>
-            </ul>
+            <div class="navbar d-none d-lg-block" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mb-auto mt-lg-4 text-center">
+                    <li class="nav-item px-sm-2">
+                        <a href="index.html" class="orange_1 active nav-link bold">Home</a>
+                    </li>
+                    <li class="nav-item px-sm-2">
+                        <a href="store/store.html" class="orange_1 active nav-link bold">Store</a>
+                    </li>
+                    <li class="nav-item px-sm-2">
+                        <a href="#" class="orange_1 active nav-link bold">About Us</a>
+                    </li>
+                    <li class="nav-item px-sm-2">
+                        <a href="#" class="orange_1 active nav-link bold">Feedback</a>
+                    </li>
+                    <li class="nav-item px-sm-2">
+                        <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
             <!-- Profile Pic -->
-            <ul class="navbar-nav ml-auto mb-auto mt-4">
-                <li class="nav-item px-sm-2 d-none d-sm-block">
+            <ul class="navbar-nav ml-auto mb-auto mt-lg-4 text-center">
+                <img src="images/home/person.png" class="rounded-circle bg-white" id="img-mentor"
+                    style="width: 40px;height: 40px; border: 1px solid white;">
+                <li class="nav-item px-sm-2">
                     <a href="#" class="brown active nav-link bold">SignUp</a>
                 </li>
             </ul>
+
         </nav>
     </header>
 
@@ -82,11 +123,10 @@
         <article class="container">
 
             <section class="d-flex justify-content-center bg_orange_1 rounded-pill">
-                <h2 class="bold brown">Our Products</h2>
+                <h1 class="bold brown">Our Products</h1>
             </section>
 
-            <section class="row">
-
+            <section class="row my-3">
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/cookies.jpg" class="card-img-top mt-3" alt="product"
@@ -97,7 +137,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/group_of_vegetables.jpg" class="card-img-top mt-3" alt="product"
@@ -108,7 +147,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/snack_withhuman.jpg" class="card-img-top mt-3" alt="product"
@@ -119,7 +157,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/cookies.jpg" class="card-img-top mt-3" alt="product"
@@ -130,7 +167,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/group_of_vegetables.jpg" class="card-img-top mt-3" alt="product"
@@ -141,7 +177,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
                         <img src="images/products/snack_withhuman.jpg" class="card-img-top mt-3" alt="product"
@@ -153,6 +188,7 @@
                     </div>
                 </div>
             </section>
+
         </article>
 
 

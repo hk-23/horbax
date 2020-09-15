@@ -1,6 +1,6 @@
 #home_body{
     background-color: #FFD460;
-    background-image: url('images/home/home_page.png');
+    background-image: url('../images/home/home_page.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode: overlay;

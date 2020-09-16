@@ -19,113 +19,141 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!-- Font : QuickSans -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!-- Website Icon -->
     <link rel="icon" href="images/home/logo.png">
     <!-- Custom Css -->
     <link rel="stylesheet" href="style/style.css">
-
 </head>
 
 <body id="home_body">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand mt-3 nav-link" href="index.html"> <img src="images/home/logo.png"
-                    style="height: 50px; width: 80px;" alt="">
-            </a>
-            <div class="dropdown">
-                <button class="btn mt-3 custom-toggler navbar-toggler" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <ul class="navbar-nav mr-auto mb-auto mt-lg-4 text-center">
-                        <li class="nav-item px-sm-2">
-                            <a href="index.html" class="orange_1 active nav-link bold">Home</a>
-                        </li>
-                        <li class="nav-item px-sm-2">
-                            <a href="store/store.html" class="orange_1 active nav-link bold">Store</a>
-                        </li>
-                        <li class="nav-item px-sm-2">
-                            <a href="#" class="orange_1 active nav-link bold">About Us</a>
-                        </li>
-                        <li class="nav-item px-sm-2">
-                            <a href="#" class="orange_1 active nav-link bold">Feedback</a>
-                        </li>
-                        <li class="nav-item px-sm-2">
-                            <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 
-            <button class="navbar-toggler mt-3 custom-toggler" type=" button" data-toggle="dropdown"
-                aria-haspopup="true" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
-
-            <!-- Nav Menu -->
-            <div class="navbar d-none d-lg-block" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mb-auto mt-lg-4 text-center">
-                    <li class="nav-item px-sm-2">
-                        <a href="index.html" class="orange_1 active nav-link bold">Home</a>
-                    </li>
-                    <li class="nav-item px-sm-2">
-                        <a href="store/store.html" class="orange_1 active nav-link bold">Store</a>
-                    </li>
-                    <li class="nav-item px-sm-2">
-                        <a href="#" class="orange_1 active nav-link bold">About Us</a>
-                    </li>
-                    <li class="nav-item px-sm-2">
-                        <a href="#" class="orange_1 active nav-link bold">Feedback</a>
-                    </li>
-                    <li class="nav-item px-sm-2">
-                        <a href="#" class="orange_1 active nav-link bold">Contact Us</a>
-                    </li>
+        <!-- sidebar navigation -->
+        <nav id="sidebar" class="bg_light_orange_2 border-0 sidebar animate__animated animate__slideInLeft"
+            style="display: block;">
+            <!-- start of the sidebar navigation -->
+            <div class="list-group list-group-flush">
+                <!-- navbar close icon -->
+                <li class="list-group-item bg_orange_1 shadow border-0">
+                    <span id="sidebar_close" class="float-right">
+                        <a href="#"><i class="fas fa-times fa-lg brown" style="color: #f06595;"></i></a>
+                    </span>
+                </li>
+                <!-- Nav Menu -->
+                <ul class="navbar-nav mb-auto text-center" id="sidebar_menu">
+                    <!-- User Profle icon with Welcom message -->
+                    <a class="bg_light_orange_2 m-1 shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust"
+                        href="#">
+                        <img class="rounded-circle bg-white float-left w-25" src="images/products/orange.jpg">
+                        <h4 class="">Welcome Back! <br> </h4>
+                        <h5 class="c-1">Muhammadh</h5>
+                    </a>
+                    <!-- Other navbars -->
+                    <a href="index.html"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Home</a>
+                    <a href="store/store.html"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Store</a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Cart
+                    </a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">About
+                        Us</a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Feedback</a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Contact
+                        Us</a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Login
+                    </a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Sign
+                        Up
+                    </a>
+                    <a href="#"
+                        class="bg_light_orange_2 m-1 bold shadow-sm brown nav-link list-group-item list-group-item-action border-0 btn-cust">Logout
+                    </a>
                 </ul>
             </div>
-            <!-- Profile Pic -->
-            <ul class="navbar-nav ml-auto mb-auto mt-lg-4 text-center">
-                <img src="images/home/person.png" class="rounded-circle bg-white" id="img-mentor"
-                    style="width: 40px;height: 40px; border: 1px solid white;">
-                <li class="nav-item px-sm-2">
+
+        </nav>
+        <!-- Overlay Effect-->
+        <div class="overlay" id="overlay" style="display: block;"></div>
+        <!-- Home page Maenu navbar -->
+        <nav class="navbar navbar-expand navbar-light px-2">
+            <!-- navbar brand logo -->
+            <a class="navbar-brand nav-link" href="index.html"> <img src="images/home/logo.png"
+                    style="height: 50px; width: 80px;" alt="">
+            </a>
+            <!-- Right side of navigation bar -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Login and Signup -->
+                <li class="nav-item d-none d-md-inline-block">
                     <a href="#" class="brown active nav-link bold">SignUp</a>
                 </li>
+                <li class="nav-item d-none d-md-inline-block">
+                    <a href="#" class="brown active nav-link bold">Login</a>
+                </li>
+                <!-- Cart Icon with svg -->
+                <li class="nav-item d-md-inline-none">
+                    <a href="#" class="nav-link">
+                        <svg id="cart_svg" xmlns="http://www.w3.org/2000/svg" width="29.8" height="25.544"
+                            viewBox="0 0 29.8 25.544">
+                            <g transform="translate(0.878 2.82) rotate(-8)" fill="#540c0b" stroke-linejoin="round">
+                                <path
+                                    d="M 14.75417137145996 22.30702972412109 C 13.49196147918701 22.30702972412109 12.46508121490479 21.19449996948242 12.46508121490479 19.82701110839844 C 12.46508121490479 18.45473098754883 13.49196147918701 17.33829116821289 14.75417137145996 17.33829116821289 C 16.01207160949707 17.33829116821289 17.03545188903809 18.45473098754883 17.03545188903809 19.82701110839844 C 17.03545188903809 21.19449996948242 16.01207160949707 22.30702972412109 14.75417137145996 22.30702972412109 Z M 6.617300987243652 22.30702972412109 C 5.359401226043701 22.30702972412109 4.336020946502686 21.19449043273926 4.336020946502686 19.82700157165527 C 4.336020946502686 18.45472145080566 5.359401226043701 17.33829116821289 6.617300987243652 17.33829116821289 C 7.879510879516602 17.33829116821289 8.906400680541992 18.45473098754883 8.906400680541992 19.82701110839844 C 8.906400680541992 21.19449996948242 7.879510879516602 22.30702972412109 6.617300987243652 22.30702972412109 Z M 17.6923713684082 16.62565040588379 L 16.89619064331055 16.040771484375 C 17.52387046813965 14.82921028137207 18.53975105285645 13.6629810333252 19.4360408782959 12.63403034210205 C 20.44333076477051 11.47765064239502 21.58502197265625 10.1669807434082 21.31924057006836 9.582990646362305 C 21.14534187316895 9.20089054107666 20.16582107543945 8.559890747070313 15.55941104888916 8.559890747070313 C 15.2483606338501 8.559890747070313 14.91979122161865 8.562740325927734 14.58282089233398 8.568360328674316 C 14.28992080688477 8.573150634765625 13.99784088134766 8.575571060180664 13.71452140808105 8.575571060180664 C 9.015101432800293 8.575571060180664 5.623781204223633 7.929000854492188 3.346781015396118 6.598910808563232 C 1.347521066665649 5.431060791015625 0.5844811201095581 3.97096061706543 -0.02862889319658279 2.79775071144104 C -0.1663188934326172 2.534280776977539 -0.2963688969612122 2.285420656204224 -0.4290089011192322 2.063830614089966 L 0.380451112985611 1.482590675354004 C 3.377101182937622 4.996610641479492 6.013601303100586 5.614460468292236 18.01204109191895 5.614460468292236 C 22.84872055053711 5.614460468292236 24.92033195495605 6.085280895233154 25.40076065063477 7.293730735778809 C 25.97870063781738 8.747410774230957 24.02386093139648 10.59356021881104 20.78522109985352 13.65213108062744 C 19.84847068786621 14.53680038452148 18.7867317199707 15.53951072692871 17.6923713684082 16.62565040588379 Z"
+                                    stroke="none" />
+                                <path
+                                    d="M 14.75417137145996 21.80702972412109 C 15.74247074127197 21.80702972412109 16.53545188903809 20.92557144165039 16.53545188903809 19.82701110839844 C 16.53545188903809 18.72844123840332 15.74638080596924 17.83829116821289 14.75417137145996 17.83829116821289 C 13.7697811126709 17.83829116821289 12.96508121490479 18.72844123840332 12.96508121490479 19.82701110839844 C 12.96508121490479 20.92557144165039 13.76587104797363 21.80702972412109 14.75417137145996 21.80702972412109 M 6.617300987243652 21.80702972412109 C 7.60560131072998 21.80702972412109 8.406400680541992 20.92557144165039 8.406400680541992 19.82701110839844 C 8.406400680541992 18.72844123840332 7.60560131072998 17.83829116821289 6.617300987243652 17.83829116821289 C 5.629011154174805 17.83829116821289 4.836020946502686 18.73278045654297 4.836020946502686 19.82700157165527 C 4.836020946502686 20.92123031616211 5.629011154174805 21.80702972412109 6.617300987243652 21.80702972412109 M 16.53545188903809 19.82701110839844 L 16.53545188903809 19.82700157165527 C 16.53545188903809 19.82700157165527 16.53545188903809 19.82700157165527 16.53545188903809 19.82701110839844 M 17.34015083312988 16.27077102661133 C 24.63325119018555 9.032390594482422 29.81694030761719 6.114460468292236 18.01204109191895 6.114460468292236 C 6.207140922546387 6.114460468292236 3.199281215667725 5.558660507202148 1.10748294446239e-06 1.80703067779541 C 1.312194466590881 3.999178886413574 2.048430442810059 8.075571060180664 13.71452331542969 8.075571060180664 C 13.9952564239502 8.075571060180664 14.28092765808105 8.073225975036621 14.57448101043701 8.06843090057373 C 14.9169807434082 8.062719345092773 15.24543380737305 8.059892654418945 15.55940628051758 8.059892654418945 C 27.18077278137207 8.059892654418945 19.59186744689941 11.92445468902588 17.34015083312988 16.27077102661133 M 14.75417137145996 22.80702972412109 C 13.21626091003418 22.80702972412109 11.96508121490479 21.47020149230957 11.96508121490479 19.82701110839844 C 11.96508121490479 18.17901992797852 13.21626091003418 16.83829116821289 14.75417137145996 16.83829116821289 C 16.28777122497559 16.83829116821289 17.53545188903809 18.17901992797852 17.53545188903809 19.82701110839844 C 17.53545188903809 21.47020149230957 16.28777122497559 22.80702972412109 14.75417137145996 22.80702972412109 Z M 6.617300987243652 22.80702972412109 C 5.083701133728027 22.80702972412109 3.836021184921265 21.47019004821777 3.836021184921265 19.82700157165527 C 3.836021184921265 18.17901992797852 5.083701133728027 16.83829116821289 6.617300987243652 16.83829116821289 C 8.155211448669434 16.83829116821289 9.406400680541992 18.17901992797852 9.406400680541992 19.82701110839844 C 9.406400680541992 21.47020149230957 8.155211448669434 22.80702972412109 6.617300987243652 22.80702972412109 Z M 17.33985710144043 17.27078247070313 C 17.13304138183594 17.27078247070313 16.92533111572266 17.20687103271484 16.74811172485352 17.07668113708496 C 16.35123062133789 16.78513145446777 16.22570037841797 16.24803161621094 16.45223045349121 15.81076049804688 C 17.10748100280762 14.54599094390869 18.1442813873291 13.35575103759766 19.05902099609375 12.30561065673828 C 19.60372161865234 11.68029022216797 20.11821174621582 11.08965110778809 20.46445083618164 10.58329105377197 C 20.81572151184082 10.06957054138184 20.85430908203125 9.844202041625977 20.85762023925781 9.784982681274414 C 20.80978775024414 9.734011650085449 20.57126808166504 9.528894424438477 19.70911026000977 9.351420402526855 C 18.76935195922852 9.157980918884277 17.37319183349609 9.059890747070313 15.55941104888916 9.059890747070313 C 15.25129127502441 9.059890747070313 14.92552089691162 9.06272029876709 14.59115123748779 9.068290710449219 C 14.29566097259521 9.073121070861816 14.00083065032959 9.075571060180664 13.71452140808105 9.075571060180664 C 8.924031257629395 9.075571060180664 5.450221061706543 8.406670570373535 3.094581127166748 7.030650615692139 C 0.9710510969161987 5.790200710296631 0.1371311098337173 4.194480895996094 -0.4717688858509064 3.029330730438232 C -0.6060189008712769 2.772450685501099 -0.7328189015388489 2.529810667037964 -0.8580288887023926 2.320630788803101 C -1.125098943710327 1.874460697174072 -1.005648851394653 1.29805064201355 -0.5832588672637939 0.9947506785392761 C -0.4072802364826202 0.8683879971504211 -0.2031705230474472 0.8069985508918762 -0.000536353443749249 0.8069985508918762 C 0.2831989824771881 0.8069985508918762 0.5640590190887451 0.9273370504379272 0.7609010934829712 1.15816068649292 C 3.630221128463745 4.522860527038574 6.209831237792969 5.114460468292236 18.01204109191895 5.114460468292236 C 20.34278106689453 5.114460468292236 22.04862022399902 5.229140758514404 23.22705078125 5.46505069732666 C 24.15275192260742 5.650370597839355 25.43340110778809 6.022410869598389 25.86539077758789 7.109010696411133 C 26.33346176147461 8.286360740661621 25.50339126586914 9.492530822753906 24.72795104980469 10.41181087493896 C 23.87955093383789 11.41758060455322 22.60469055175781 12.62156105041504 21.12852096557617 14.01565074920654 C 20.19388198852539 14.8983211517334 19.13454055786133 15.89876079559326 18.04459190368652 16.98052978515625 C 17.85113716125488 17.17253303527832 17.59619903564453 17.27078247070313 17.33985710144043 17.27078247070313 Z"
+                                    stroke="none" fill="#540c0b" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <!-- Hamburger Icon -->
+                <li class="nav-item">
+                    <a id="bars" class="btn">
+                        <i class="fas fa-bars fa-lg brown"></i>
+                        <span class="d-none d-md-inline-block text-white brown">Menu</span>
+                    </a>
+                </li>
             </ul>
-
         </nav>
     </header>
 
     <main>
 
+        <!-- Middle brand Logo -->
         <article class="container d-flex justify-content-center align-items-center" style="height: 88vh !important;">
             <div class="card mb-n2 bg-transparent border-0" style="width: 18rem;">
+                <!-- Logo -->
                 <section>
                     <img src="images/home/logo.png" class="card-img-top" alt="">
                 </section>
+                <!-- Search Button -->
                 <section class="card-body text-center">
                     <h4 class="card-title bold orange_1">Online Store</h4>
-
-                    <div class="input-group rounded-pill bg_light_orange_2 border"
-                        style="border-color: #FA7E0A!important;">
-                        <input type=" text" id="search_home" class="form-control rounded-pill bg-transparent border-0"
-                            placeholder="Search a product">
-                        <div class="input-group-append">
-                            <span class="input-group-text rounded-pill bg-transparent border-0"><i
-                                    class="fas fa-search orange_2"></i></span>
-                        </div>
-                    </div>
+                    <!-- Search a Product Button -->
+                    <a href="#" class="input-group rounded-pill bg_light_orange_2 borde btn-cust" id="search_a_product">
+                        <button type=" text" id="search_home"
+                            class="form-control rounded-pill bg_orange_1 border-0 text-white">Search a
+                            product&nbsp;<i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </a>
                 </section>
             </div>
         </article>
 
+        <!-- Showcase Products -->
         <article class="container">
-
+            <!-- Title  -->
             <section class="d-flex justify-content-center bg_orange_1 rounded-pill">
                 <h1 class="bold brown">Our Products</h1>
             </section>
-
+            <!-- Products Cards -->
             <section class="row my-3">
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center">
                     <div class="card text-center align-items-center my-2" style="width: 18rem;">
@@ -197,6 +225,25 @@
     <footer>
 
     </footer>
+
+    <script>
+        $(document).ready(function () {
+
+            // When click Menu Icon in navigation 
+            $('#bars').click(function () {
+                $('#sidebar').css("display", "block");
+                $('#sidebar').removeClass("animate__slideOutLeft");
+                $('#sidebar').addClass("animate__slideInLeft");
+                $('#overlay').css("display", "block");
+            });
+            // closing side bar navigation
+            $('#sidebar_close,#overlay').click(function () {
+                $('#sidebar').removeClass("animate__slideInLeft");
+                $('#sidebar').addClass("animate__slideOutLeft");
+                $('#overlay').css("display", "none");
+            });
+        });
+    </script>
 </body>
 
 </html>
